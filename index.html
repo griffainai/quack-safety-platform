@@ -1133,7 +1133,11 @@ body.modal-open{overflow:hidden}
   .course-header-grid{grid-template-columns:1fr !important}
   .auth-benefits,.lesson-key{grid-template-columns:1fr !important}
 
-  /* ── Counter — shrink the giant number ── */
+  /* ── Section padding ── */
+  section{padding:60px 16px !important}
+  .data-table-section{padding:60px 16px}
+
+  /* ── Counter ── */
   .counter-val{font-size:clamp(40px,13vw,68px) !important}
   .counter-box{padding:24px 16px !important}
 
@@ -1141,14 +1145,57 @@ body.modal-open{overflow:hidden}
   .program-card-compact[data-program="rollover"]{flex-direction:column !important;gap:12px !important}
   .program-card-compact[data-program="rollover"] img{width:100px !important;flex-shrink:1 !important}
   .program-card-compact[data-program="rollover"] .program-name{font-size:22px !important}
+  .program-name{font-size:24px}
 
-  /* ── Program name general ── */
-  .program-name{font-size:26px}
+  /* ── Community map ── */
+  .community-map{grid-template-columns:1fr !important;gap:24px !important;padding:24px !important}
+  .map-title{font-size:clamp(28px,8vw,44px)}
 
-  /* ── Prevent any child from blowing out the viewport ── */
+  /* ── Pillar letters ── */
+  .pillar-letter{font-size:clamp(52px,14vw,100px)}
+  .pillar{min-height:auto;padding:24px 20px}
+
+  /* ── CTA boxes ── */
+  .cta-box{padding:36px 20px !important}
+
+  /* ── Data table ── */
+  .data-table{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .data-table table{min-width:480px}
+  .data-table th,.data-table td{padding:12px 14px;font-size:13px}
+
+  /* ── Featured initials ── */
+  .featured-initials{font-size:clamp(48px,15vw,80px)}
+
+  /* ── Mobile menu ── */
+  .mobile-menu{padding:60px 20px 24px}
+
+  /* ── Page header grid gap ── */
+  .page-header-inner [style*="gap:60px"]{gap:20px !important}
+  .page-header-inner [style*="grid-template-columns:auto"]{grid-template-columns:1fr !important}
+
+  /* ── Voice / testimonial cards ── */
+  .voice-card{padding:28px 20px}
+
+  /* ── Event cards ── */
+  .event{padding:28px 20px}
+  .event-date .day{font-size:28px}
+
+  /* ── Article feed cards ── */
+  .art-card{padding:28px 20px}
+
+  /* ── Pillar grid ── */
+  .pillar-grid{grid-template-columns:1fr !important}
+  .pillar:last-child{border-bottom:none}
+
+  /* ── Schedule ── */
+  .schedule-item{grid-template-columns:70px 1fr;gap:10px}
+
+  /* ── Prevent anything blowing out viewport ── */
   [style*="width:"]{max-width:100% !important}
   [style*="min-width:"]{min-width:0 !important}
   [style*="flex-shrink:0"]{flex-shrink:1 !important}
+  [style*="gap:60px"]{gap:20px !important}
+  [style*="gap:48px"]{gap:16px !important}
   .section-h,[class*="-title"]{word-break:break-word;overflow-wrap:break-word}
 }
 </style>
